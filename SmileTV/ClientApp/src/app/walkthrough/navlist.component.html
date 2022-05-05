@@ -1,0 +1,7 @@
+
+<div style="width: 100%;">
+  <div>Current Menu:&nbsp;{{currentMenu}}</div>
+  <div *ngFor="let button of buttons" style="text-align: center;">
+    <button (click)="clickButton(button.menuName, button.src)">{{button.caption}}</button>
+  </div>
+</div>
